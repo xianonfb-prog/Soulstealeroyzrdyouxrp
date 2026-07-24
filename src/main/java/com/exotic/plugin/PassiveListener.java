@@ -157,7 +157,7 @@ public class PassiveListener implements Listener {
         player.addPotionEffect(new PotionEffect(PotionEffectType.DOLPHINS_GRACE, 700, 0, false, true));
         combat.hypersonicActive.put(player.getUniqueId(), System.currentTimeMillis() + 35_000L);
         player.getWorld().playSound(player.getLocation(), Sound.ITEM_TRIDENT_RIPTIDE_3, 1f, 1.8f);
-        player.getWorld().playSound(player.getLocation(), Sound.ENTITY_BREEZE_WIND_CHARGE_BURST, 0.8f, 1.6f);
+        player.getWorld().playSound(player.getLocation(), Sound.ENTITY_BREEZE_WIND_BURST, 0.8f, 1.6f);
         player.sendMessage(Component.text("\"Speed is my specialty.\"", NamedTextColor.AQUA));
 
         var stepHeight = player.getAttribute(AttributeKeys.STEP_HEIGHT);
