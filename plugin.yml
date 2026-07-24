@@ -1,0 +1,27 @@
+name: Exotic
+version: '1.2.0'
+main: com.exotic.plugin.ExoticPlugin
+api-version: '1.21'
+author: You
+description: 6 exotic weapons unlocked through operator-issued trials.
+
+commands:
+  exotic:
+    description: Main Exotic command.
+    usage: |
+      /exotic trial <itemId> <player>    - Start a trial for a player (admin)
+      /exotic complete <player>          - Force-complete an active trial (admin)
+      /exotic cancel <player>            - Cancel a player's active trial (admin)
+      /exotic give <itemId> <player>     - Directly give an item (admin)
+      /exotic list                       - List all configured item IDs
+      /exotic progress                   - Check your own active trial
+      /exotic collection [player]        - See which items you (or another player) own
+    aliases: [ex]
+
+permissions:
+  exotic.admin:
+    description: Allows starting/managing trials and giving items.
+    default: op
+  exotic.use:
+    description: Allows using exotic weapon abilities.
+    default: true
